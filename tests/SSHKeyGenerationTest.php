@@ -31,7 +31,7 @@ class SSHKeyGenerationTest extends TestCase
 
         $this->assertNotEmpty($keys);
 
-        $this->assertStringStartsWith('ssh-rsa ', $keys['public_key']);
+        $this->assertStringStartsWith('ssh-rsa ', $keys->getPublicKey()->getContent());
     }
 
     public function testSSHKeyContainsPrivateKey()
@@ -42,6 +42,6 @@ class SSHKeyGenerationTest extends TestCase
 
         $this->assertNotEmpty($keys);
 
-        $this->assertNotEmpty($keys['private_key']);
+        $this->assertNotEmpty($keys->getPrivateKey());
     }
 }
