@@ -1,28 +1,31 @@
 {
-    "name": "vendera-trading-company/php-ssh-key",
-    "description": "SSH key manager for PHP.",
-    "keywords": [
-      "php",
-      "ssh"
-    ],
-    "autoload": {
-      "psr-4": {
-        "VenderaTradingCompany\\PHPSSHKey\\": "src"
-      }
-    },
-    "autoload-dev": {
-      "psr-4": {
-        "Tests\\": "tests/"
-      }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require-dev": {
-      "phpunit/phpunit": "^10.0"
-    },
-    "authors": [
-      {
-        "name": "Vendera Trading Company"
-      }
-    ]
-  }
+  "name": "vendera-trading-company/php-ssh-key",
+  "description": "SSH key manager for PHP.",
+  "keywords": [
+    "php",
+    "ssh"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "psr-4": {
+      "VenderaTradingCompany\\PHPSSHKey\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "authors": [
+    {
+      "name": "Vendera Trading Company"
+    }
+  ]
+}
