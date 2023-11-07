@@ -4,11 +4,14 @@ namespace VenderaTradingCompany\PHPSSHKey;
 
 class SSHKey
 {
-    public function create(string  $folderPath, string $fileName = 'ssh_key'): Keys | null
+    /** Creates a new ssh key pair */
+    public function create(string  $folderPath, string $fileName = null): Keys | null
     {
         if (!is_dir($folderPath)) {
             shell_exec('mkdir ' . $folderPath);
         }
+
+        $fileName = $fileName ?? ('ssh_key_' . time());
 
         $filePath = $folderPath . '/' . $fileName;
 
