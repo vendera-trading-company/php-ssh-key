@@ -16,6 +16,7 @@ class Keys
     /** Returns the private key */
     public function getPrivateKey(): Key
     {
+        
         return $this->privateKey;
     }
 
